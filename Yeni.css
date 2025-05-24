@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  background-image:linear-gradient(to right, rgb(35, 35, 35),gray,rgb(138, 138, 138));
+}
+header{
+justify-content: center;
+background-image:linear-gradient(to right, rgb(35, 35, 35),gray,rgb(138, 138, 138));
+align-items: center;
+text-align: center;
+position: sticky;
+
+}
+nav{
+    margin-top: 20px;
+    display: block;
+    background-color:rgb(57, 57, 57);
+    border:3px solid black ;
+    border-radius: 25px;
+    transition: all 0.7s;
+place-self: center;
+position: sticky;
+top: 3px;
+}
+nav ul{
+    display: flex;
+    padding: 15px;
+    font-size: x-large;
+    list-style-type: none;
+    transition: all 0.4s;
+}
+nav ul li{
+    padding: 10px;
+    border-radius: 10px;
+transition: all 0.3s;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+
+}
+nav select{
+    font-size: large;
+    border: 0;
+    border-radius: 8px;
+    background-color:rgb(53, 53, 53) ;
+color: white;
+}
+nav ul li:nth-child(4){
+    border: 2px solid rgb(159, 0, 0);
+
+
+}
+nav ul li:nth-child(4) a{color: rgb(209, 0, 0);}
+nav ul li:nth-child(4):hover{
+    background-color: rgb(209, 0, 0);
+}
+nav ul li:nth-child(4):hover a{color: white;}
+nav ul li:nth-child(-n+3):hover{
+    background-color: rgb(246, 246, 246);
+
+
+}
+nav ul li:nth-child(-n+3):hover a{
+    color: black;
+}
+
+.f img{
+    width: 350px;
+border-radius: 30px;
+margin: 30px;
+}
+.f h1{
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+margin-top: -450px;
+margin-left: -200px;
+transition: all 0.8s;
+}
+.q{
+    display: inline;
+    
+}
+.q i{
+    font-size: 65px;
+    color: rgb(0, 198, 0);
+}
+div{
+    display: flex;
+    margin: 80px;
+transition: all 1.5s;
+}
+div img{
+    margin-top: -30px;
+    transition: all 0.5s;
+}
+div h1{
+    color: white;
+    font-size: 65px;
+    font-weight: 500;
+    margin-left: 30px;
+   
+}
+div .Esas{
+    color:white;
+    font-size: 65px;
+margin-left: 25px;
+margin-top: 2px;
+}
+div p{
+    color: white;
+    font-size: xx-large;
+    margin-top: 100px;
+    margin-left: -200px;
+    transition: all 1s;
+}
+div img:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 3px 10px 0px black;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+transition: all 0.5s;
+}
+footer img{
+    width: 500px;
+margin-right: 30px;
+}
+footer ul {
+    display: flex;
+  list-style-type: none;
+height: 50px;
+
+}
+footer ul li{
+    padding: 20px;
+    transition: all 1.3s;
+}
+footer ul li a{
+    font-size: 50px;
+    color: black;
+}
+footer ul li a:hover{
+    color: red;
+}
+
