@@ -219,6 +219,9 @@ footer a:hover{
     .slide:first-child{
         margin-left: 100px;
     }
+     #stfh{
+    font-size:45px !important;
+ }
     .contact{
         flex-direction: column;
         text-align: center;
@@ -241,4 +244,5 @@ footer a:hover{
             display: none;
         }
     }
+
 }
