@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    backdrop-filter: blur(20px);
+}
+
+body{
+    background-color: #000;
+    background-image: url(Certifikates_Photos/heat-alt-svgrepo-com\ \(2\).svg);
+    background-repeat: repeat;
+    background-size: 100px;
+    backdrop-filter: blur(10px);
+}
+header{
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8px;
+    border: 2px dashed transparent;
+    transition: all 0.3s;
+    border-radius: 0px;
+}
+.mobile{
+    display: none;
+}
+nav:hover{
+ border: 2px dashed red;
+ padding: 18px 0;
+ border-radius: 15px;
+}
+nav a{
+    color: rgba(255, 0, 0, 0.5);
+    text-decoration: none;
+    font-size: 40px;
+    transition: all 0.3s;
+    text-shadow: 1px 1px 1px rgba(255, 0, 0, 0.5);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.SocialMedia ul{
+    display: flex;
+   list-style-type: none;
+   gap: 25px;
+}
+.SocialMedia ul li a i{
+    transition: 0.3s;
+}
+.Menu ul{
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+
+}
+.Menu ul li {
+    transition: all 0.3s;
+}
+.Menu ul li a{
+    border-radius: 10px;
+    border: 2px solid transparent;
+ 
+}
+nav a:hover{
+    color: rgba(255, 0, 0, 1);
+    text-shadow: 1px 1px 1px rgba(255, 0, 0, 1);
+}
+.SocialMedia ul li a:hover{
+     i{
+        transform: scale(1.3); 
+     }
+}
+
+.Menu ul li a:hover{
+     padding: 8px 20px;
+    border: 2px solid blue;
+}
+main{
+    display: flex;
+    flex-direction: column;
+
+}
+.foto{
+    align-self: center;
+}
+ .foto img{
+    width: 100%;
+    border: 3px solid rgb(0, 0, 200);
+   margin-top: 20px;
+   border-radius: 50px;
+}
+#h{
+    color: rgb(160, 0, 0); 
+    text-shadow: 1px 1px 1px red;
+}
+#h h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 70px;
+    margin: 50px 0 30px;
+    transition: letter-spacing 0.5s;
+}
+
+#h h1:hover{
+    letter-spacing: 3px;
+}
+#h p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    padding: 0 150px;
+    text-align: justify;
+}
+.STF{
+    overflow-x: hidden;
+    margin-top: 50px;
+}
+.slides{
+    display: flex;
+    overflow-x: hidden;
+    width: calc(17 * 100%); 
+    animation: scroll 50s linear infinite;
+    padding: 50px 0;
+}
+.slide img {
+    border: 10px double rgb(0, 0, 200);
+    width: 650px;
+    height: 500px;
+    margin: 25px;
+    border-radius: 15px;
+    transition: all 0.4s;
+}
+.slide:first-child{
+    margin-left: 1500px;
+}
+
+@keyframes scroll {
+    0%{transform: translateX(0);}
+    100%{transform: translateX(-50%);}
+}
+.slides:active{
+    animation-play-state: paused;
+}
+.slide img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 10px 15px red ;
+}
+footer{
+    margin-top: 100px;
+}
+footer a{
+    text-decoration: none;
+    color: rgba(255, 0, 0, 1);
+    font-size: 50px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  transition: all 0.3s;
+  text-shadow: 1px 1px 1px rgba(255, 0, 0, 0.5);
+
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+.contact ul{
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+}
+footer i{
+    transition: all 0.3s;
+}
+footer a:hover{
+    color: rgb(0, 0, 200);
+    text-shadow: 1px 1px 1px rgb(0, 0, 200);
+    transform: translateY(-10px);
+}
+.contact ul li i:hover{
+         transform: translateY(-10px);
+}
+
+.author{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 30px;
+    padding-bottom:30px;
+    color: red;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(255, 0, 0, 0.5);
+    
+}
+@media (max-width:925px) {
+    nav{
+        display: none;
+    }
+    .mobile{
+         display: block;
+         border: 2px dashed red;
+         padding: 18px 0;
+         border-radius: 15px;
+    }
+    .mobile ul{
+        display: flex;
+        list-style-type: none;
+        justify-content: space-around;
+    }
+    .foto img{
+        width: 100%;
+    }
+    #h p{
+        padding: 0 30px;
+    }
+    .slide img{
+        width: 400px;
+        height: 300px;
+        margin: 15px;
+    }
+    .slide:first-child{
+        margin-left: 100px;
+    }
+    .contact{
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    .contact ul{
+        align-self: center;
+        
+    }
+    .contact a{
+        font-size: 30px;
+    }
+    .author{
+        font-size: 20px;
+    }
+    #mail{
+        font-size: 25px;
+        text-wrap: nowrap;
+         i{
+            display: none;
+        }
+    }
+}
