@@ -211,6 +211,10 @@ footer a:hover{
     #h p{
         padding: 0 30px;
     }
+    .slides{
+    width: calc(33 * 100%); 
+    animation: scroll 50s linear infinite;
+}
     .slide img{
         width: 400px;
         height: 300px;
@@ -246,3 +250,4 @@ footer a:hover{
     }
 
 }
+
