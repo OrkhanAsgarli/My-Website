@@ -212,11 +212,11 @@ footer a:hover{
         padding: 0 30px;
     }
     .slides{
-    width: calc(33 * 100%); 
+    width: calc(30 * 100%); 
 }
     .slide img{
-        width: 400px;
-        height: 300px;
+        width: 350px;
+        height: 280px;
         margin: 15px;
     }
     .slide:first-child{
@@ -249,5 +249,6 @@ footer a:hover{
     }
 
 }
+
 
 
