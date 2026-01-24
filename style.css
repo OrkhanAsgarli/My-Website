@@ -206,7 +206,7 @@ footer a:hover{
     }
     .mobile{
          display: block;
-         border: 2px dashed red;
+         border: 2px dashed blue;
          padding: 18px 0;
          border-radius: 15px;
     }
@@ -215,11 +215,16 @@ footer a:hover{
         list-style-type: none;
         justify-content: space-around;
     }
+    .mobile a{
+        text-shadow: -1px 1px 1px black;
+    }
     .foto img{
         width: 100%;
     }
     #h p{
         padding: 0 30px;
+        font-size: 1.5rem;
+        word-spacing: 0;
     }
     .slides{
     width: calc(40 * 100%); 
@@ -259,6 +264,7 @@ footer a:hover{
     }
 
 }
+
 
 
 
