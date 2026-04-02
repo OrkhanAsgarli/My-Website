@@ -130,7 +130,7 @@ main{
 .slides{
     display: flex;
     overflow-x: hidden;
-    width: calc(19 * 100%); 
+    width: calc(20 * 100%); 
     animation: scroll 50s linear infinite;
     padding: 50px 0;
 }
